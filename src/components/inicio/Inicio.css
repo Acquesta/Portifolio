@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Junge&family=Jura:wght@400;700&family=Kadwa:wght@400;700&display=swap');
+
+:root{
+  --font-Jura: font-family: 'Jura', sans-serif;
+  --font-Junge: font-family: 'Junge', sans-serif;
+  --font-Kadwa: font-family: 'Kadwa', serif;
+
+  --bg: background: #F3F3F3;
+  --bg-Separado: background: rgba(0, 0, 0, 0.06); 
+  --azul-Padrao: #0B1FD6;
+  --azul-Claro:  #3949DD;
+}
+
+*{
+  background-color: var(--bg);
+}
+
+.hotbar{
+  padding: 20px 100px 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotbar__itens{
+  width: 744px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item__lista{
+  display: grid;
+	align-items: center;
+  color: #000;
+  font-family: var(--font-Kadwa);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item__lista a{
+  text-decoration: none;
+  color: #000;
+}
+
+.item__lista a:hover{
+  cursor: pointer;
+  color: var(--azul-Padrao);
+}
+
+.hamburguer{
+  display: none;
+  flex-direction: column;
+  height: 62px;
+  width: 62px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hamburguer div{
+  background-color: #000;
+  height: 6px;
+  width: 100%;
+  border-radius: 5px ;
+}
+
+.inicio{
+  padding-top: 163px;
+  text-align: center;
+}
+
+.item__title-principal{
+  font-family: var(--font-Kadwa);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item__title-principal p{
+  margin: 32px;
+}
+
+.span{
+  color: var(--azul-Padrao);
+}
+
+.item__subTitle{
+  color: #000;
+  font-family: Junge;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 40%;
+  margin: auto;
+}
+
+.item__subTitle p{
+  margin: 0;
+}
+
+#contato{
+  width: 283px;
+  height: 56px;
+  border-radius: 5px;
+  background: #0B1FD6;
+  border: none;
+  margin: 41px 0px 158px 0;
+
+  color: #EBEBEB;
+  font-family: Jura;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#contato:hover{
+  background-color: var(--azul-Claro);
+}
+
+@media (max-width: 1030px) {
+
+  .hotbar__itens{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    align-items: center;
+    background-color: var(--bg-Separado);
+    transition: menu ease-in 10s;
+  }
+
+  .hamburguer{
+    display: flex;
+  }
+
+  .inicio{
+    padding-top: 50px ;
+  }
+
+  .item__title-principal{
+    font-size: 32px;
+  }
+
+  .item__subTitle{
+    width: 60%;
+  }
+
+  .item__subTitle p{
+    font-size: 20px;
+  }
+
+  #contato{
+    width: 170px;
+    height: 35px;
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+
+}

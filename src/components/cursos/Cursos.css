@@ -1,0 +1,41 @@
+.cursos{
+    padding: 50px 200px 150px;
+    background-color: rgba(0, 0, 0, 0.06);;
+}
+
+.titulo__cursos{
+    font-family: var(--font-Kadwa);
+    color: var(--azul-Padrao);
+    font-size: 64px;
+    text-align: center;
+}
+
+.itens{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coluna{
+    width: 30%;
+}
+
+@media (max-width: 1030px) {
+    .cursos{
+        padding: 25px 100px;
+    }
+
+    .titulo__cursos{
+        font-size: 32px;
+    }
+
+    .itens{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .coluna{
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+
+.projetos{
+    padding: 50px 200px 150px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.title__titulo{
+    font-size: 60px;
+    font-family: var(--font-Kadwa);
+    color: var(--azul-Padrao);
+}
+
+.title__subtitulo{
+    font-size: 32px;
+}
+
+@media (max-width: 1030px) {
+
+    .projetos{
+        padding: 25px 100px;
+    }
+
+    .projetoInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title__titulo{
+        font-size: 32px;
+    }
+
+    .title__subtitulo {
+        display: none;
+    }
+}

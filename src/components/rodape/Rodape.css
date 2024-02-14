@@ -1,0 +1,42 @@
+.Rodape{
+    background-color: var(--azul-Padrao);
+    padding:50px 200px;
+    color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes, .curriculo{
+    display: flex;
+    flex-direction: column;
+}
+
+.redesSocias, .download__title{
+    font-size: 24px;
+}
+
+.redes a, .download__link{
+    margin-top: 1.5rem;
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+.logo{
+    width: 62px;
+    height: 63px;
+    background-image: url('/icon/Group92.png');
+}
+
+@media (max-width: 1030px) {
+    .Rodape{
+        padding: 25px 100px;
+    }
+
+    .logo{
+        width: 31px;
+        height: 32px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 20px;
+    }
+}
