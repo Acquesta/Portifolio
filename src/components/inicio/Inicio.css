@@ -133,7 +133,6 @@
     padding-top: 10%;
     align-items: center;
     background-color: var(--bg-Separado);
-    transition: menu ease-in 10s;
   }
 
   .hamburguer{
@@ -163,4 +162,14 @@
     margin-bottom: 100px;
   }
 
+}
+
+@media (max-width: 425px){
+  .hotbar{
+    padding: 20px 25px ;
+  }
+
+  .item__subTitle{
+    width: 80%;
+  }
 }

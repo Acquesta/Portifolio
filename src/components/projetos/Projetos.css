@@ -38,3 +38,10 @@
         display: none;
     }
 }
+
+
+@media (max-width: 425px) {
+    .projetos{
+        padding: 10px 25px;
+    }
+}

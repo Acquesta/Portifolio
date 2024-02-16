@@ -72,3 +72,10 @@
         padding:.5rem ;
     }
 }
+
+
+@media (max-width: 425px) {
+    .contato{
+        padding: 10px 25px;
+    }
+}
